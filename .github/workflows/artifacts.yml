@@ -18,7 +18,7 @@ jobs:
         with:
           java-version: '8'
           distribution: 'adopt'
-      - run: gradle bootJar
+      - run: gradle jar
       - uses: actions/upload-artifact@v2
         with:
           name: Package
